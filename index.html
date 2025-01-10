@@ -27,6 +27,11 @@
       align-items: center;
       background-color: #333;
       padding: 10px;
+        position: fixed; /* Fixa o menu no topo */
+    top: 0;
+    left: 0;
+    width: 100%; /* O menu ocupa toda a largura da tela */
+    z-index: 1000; /* Garante que o menu fique acima da imagem */
     }
 
     /* Botões do menu */
@@ -60,9 +65,9 @@
 </head>
 <body>
   <nav>
-    <button class="menu-button">Home</button>
-    <button class="menu-button">Sobre</button>
-    <button class="menu-button">Contato</button>
+    <button class="menu-button">RESERVAS</button>
+    <button class="menu-button">INSTAGRAM</button>
+    <button class="menu-button">GUIA</button>
   </nav>
 </body>
 </html>
