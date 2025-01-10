@@ -5,6 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa SuMa</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa Suma</title>
+  <style>
+    /* Estilo geral */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+
+    /* Container do menu */
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #333;
+      padding: 10px;
+    }
+
+    /* Botões do menu */
+    .menu-button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    /* Hover nos botões */
+    .menu-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Resposividade */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+      }
+      .menu-button {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <button class="menu-button">Home</button>
+    <button class="menu-button">Sobre</button>
+    <button class="menu-button">Contato</button>
+  </nav>
+</body>
+</html>
+
     <style>
         body {
             margin: 0;
