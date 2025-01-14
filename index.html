@@ -71,6 +71,20 @@
       display: block;
       margin: 0 auto;
     }
+
+    /* Ajuste para dispositivos menores (mobile) */
+    @media (max-width: 768px) {
+      .menu-container {
+        max-width: 90%; /* Largura igual à imagem */
+        flex-wrap: wrap; /* Permite que os botões quebrem linha */
+      }
+
+      .menu-button {
+        padding: 8px 15px; /* Botões menores */
+        margin: 5px; /* Espaço menor entre os botões */
+        font-size: 14px; /* Reduz tamanho da fonte */
+      }
+    } 
   </style>
 </head>
 <body>
