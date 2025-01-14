@@ -22,18 +22,18 @@
       justify-content: center;
       align-items: center;
       background-color: #ffffff;
-      padding: 10px;
+      padding: 10px 0;
       position: fixed; /* Fixa o menu no topo */
       top: 0;
       left: 0;
       width: 100%;
       z-index: 1000;
     }
-    
+
     /* Contêiner do menu centralizado */
     .menu-container {
       display: flex;
-      justify-content: space-between; /* Espaçamento uniforme */
+      justify-content: center; /* Centraliza os botões horizontalmente */
       align-items: center;
       max-width: 90%; /* Largura alinhada à imagem principal */
       width: 100%;
@@ -47,26 +47,26 @@
       color: black;
       border-radius: 5px;
       padding: 10px 20px;
-      margin: 0 10px;
+      margin: 0 15px; /* Espaçamento uniforme entre os botões */
       font-size: 16px;
-      font-weight: regular;
+      font-weight: 600;
       display: inline-block;
-      transition: background-color 0.3s ease;
+      transition: color 0.3s ease;
     }
 
     .menu-button:hover {
-      text-color: #808080;
+      color: #808080; /* Cor do texto ao passar o mouse */
     }
 
     /* Espaçamento abaixo do menu */
     .content {
-      margin-top: 10px;
+      margin-top: 80px; /* Espaço suficiente para compensar o menu fixo */
       text-align: center;
     }
 
     /* Imagem principal */
     .main-image {
-      max-width: 100%;
+      max-width: 90%; /* Largura proporcional */
       max-height: 100vh;
       display: block;
       margin: 0 auto;
@@ -76,9 +76,11 @@
 <body>
   <!-- Menu -->
   <nav>
-    <a href="https://www.airbnb.com/h/casasuma" target="_blank" class="menu-button">RESERVAS</a>
-    <a href="https://www.instagram.com/casasuma" target="_blank" class="menu-button">INSTAGRAM</a>
-    <a href="https://issuu.com/casasumabr/docs/guia_pratico_casa_suma?ff" target="_blank" class="menu-button">GUIA</a>
+    <div class="menu-container">
+      <a href="https://www.airbnb.com/h/casasuma" target="_blank" class="menu-button">RESERVAS</a>
+      <a href="https://www.instagram.com/casasuma" target="_blank" class="menu-button">INSTAGRAM</a>
+      <a href="https://issuu.com/casasumabr/docs/guia_pratico_casa_suma?ff" target="_blank" class="menu-button">GUIA</a>
+    </div>
   </nav>
 
   <!-- Conteúdo principal -->
@@ -87,3 +89,6 @@
     <a href="https://www.airbnb.com/h/casasuma" target="_blank">
       <img src="postal_suma_tarde_site.jpg" alt="Descrição da Imagem" class="main-image">
     </a>
+  </div>
+</body>
+</html>
