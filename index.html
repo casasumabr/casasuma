@@ -77,6 +77,9 @@
       .menu-container {
         max-width: 90%; /* Largura igual à imagem */
         flex-wrap: wrap; /* Permite que os botões quebrem linha */
+        position: relative; /* Garante que não fique sobre a imagem */
+        z-index: 10; /* Coloca o menu em um nível mais alto se necessário */
+        background-color: white; /* Adiciona cor para garantir visibilidade *//
       }
 
       .menu-button {
