@@ -85,10 +85,13 @@
         font-size: 15px; /* Reduz tamanho da fonte */
       }
 
-      .main-image {
-            height: auto; /* Ajusta automaticamente para manter as proporções */
-            max-height: 100vh; /* Não ultrapassa a altura da tela */
-        }
+     .main-image {
+        width: auto; /* Ajusta largura para manter a proporção */
+        max-width: 100%; /* Não ultrapassa a largura da tela */
+        height: auto; /* Mantém a proporção */
+        max-height: 100vh; /* Não ultrapassa a altura visível */
+        object-fit: contain; /* Garante que a imagem seja exibida completa */
+      }
     } 
   </style>
 </head>
